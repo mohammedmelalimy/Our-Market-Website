@@ -4,7 +4,8 @@
     "json-server-auth": "^2.1.0"
   },
 "scripts": {
-  "start": "npx json-server-auth --port $PORT -w db.json",
-  "dev": "npx json-server-auth --port 3000 -w db.json"
+  "start": "node -e \"require('json-server-auth')(require('json-server').create(), {watch: 'db.json'}).listen(process.env.PORT || 3000)\"",
+  "dev": "json-server-auth --port 3000 -w db.json"
 }
+
 }
