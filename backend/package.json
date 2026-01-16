@@ -3,9 +3,8 @@
     "json-server": "^0.17.4",
     "json-server-auth": "^2.1.0"
   },
-"scripts": {
-  "start": "node -e \"require('json-server-auth')(require('json-server').create(), {watch: 'db.json'}).listen(process.env.PORT || 3000)\"",
-  "dev": "json-server-auth --port 3000 -w db.json"
-}
-
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
 }
