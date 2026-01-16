@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 import Signin from '../../pages/mainpages/Signin'; // Import Signin component
 import CustomModal from './CustomModal'; // Import CustomModal component
 
-const MainNav = () => {
+const Mainnav = () => {
     const [show, setShow] = useState(false);
     const [showModal, setShowModal] = useState(false); // State for modal visibility
 
@@ -93,4 +93,4 @@ const MainNav = () => {
     );
 };
 
-export default MainNav;
+export default Mainnav;
