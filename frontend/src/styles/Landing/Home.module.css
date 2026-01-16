@@ -1,0 +1,114 @@
+.responsive{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border:2px solid #f1f1f1 ;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.custombackground {
+    background: url('../../assets/banner-deal.jpg') no-repeat center center;
+    background-size: cover;
+    height: 460px;
+}
+.detected:hover{
+    border: 1px solid rgb(2, 154, 55);
+}
+.detectedtxt:hover{
+    color: rgb(2, 154, 55);
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .responsive {
+      width: 100% !important;
+      margin-bottom: 10px; 
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1199px) {
+    .responsive {
+        width: 40% !important; 
+        margin-bottom: 10px; 
+    }
+}
+
+.slider{
+    width: 85%;
+    margin-bottom: 90px;
+}
+
+.land1{
+    background-image: url('../../assets/slide-1.jpg');
+    background-size: cover; 
+    height: 85vh; 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
+}
+.land2{
+    background: url('../../assets/slider-2.jpg') no-repeat center center;
+    background-size: cover; 
+    height: 85vh; 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
+}
+
+.slidetxt{
+    width:50%;
+    padding: 60px;
+    margin-top: 10%;
+
+}
+.font{
+    font-size: 50px;
+}
+
+@media (max-width: 768px) {
+    .slidetxt {
+      width: 100% !important; /* Each child takes full width */
+      padding: 10px;
+      margin-top: 40%;
+    }
+    .font{
+        font-size: 25px;
+    }
+  }
+@media (min-width: 768px) and (max-width: 992px){
+    .slidetxt {
+      width: 70% !important; /* Each child takes full width */
+      padding: 15px;
+      margin-top: 30%;
+    }
+    .font{
+        font-size: 25px;
+    }
+  }
+
+
+
+
+.advertise {
+    width:48%;
+    margin-bottom: 20px;
+}
+.banner1{
+    background: url('../../assets/grocery-banner.png') no-repeat center center;
+    background-size: cover; 
+}
+.banner2{
+    background: url('../../assets/grocery-banner-2.jpg') no-repeat center center;
+    background-size: cover; 
+}
+@media (max-width: 768px) {
+    .advertise {
+      width: 100% !important; /* Each child takes full width */
+      margin-bottom: 15px; 
+    }
+  }
+
+.popdetected:hover{
+    border: 2px solid rgb(2, 154, 55);
+} 

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "json-server-auth": "^2.1.0"
+  },
+"scripts": {
+  "start": "json-server-auth --port $PORT -w db.json",  
+  "dev": "json-server-auth --port 3000 -w db.json"     
+}
+}

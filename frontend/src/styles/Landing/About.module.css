@@ -1,0 +1,9 @@
+.gapping {
+    gap: 210px;
+  }
+  
+  @media (max-width: 768px) {
+    .gapping {
+      gap: 90px;
+    }
+  }

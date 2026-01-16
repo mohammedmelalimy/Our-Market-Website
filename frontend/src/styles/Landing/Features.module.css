@@ -1,0 +1,16 @@
+.colorbg{
+    background-color: rgb(240, 243, 242);
+  }
+.slidesbg{
+    padding: 1.5rem; /* Equivalent to p-4 */
+    background-color: #ffffff;; /* Replace with actual bg color if needed */
+    color: rgb(5, 182, 5); /* Text color equivalent to text-success */
+    border-radius: 0.75rem; /* Equivalent to rounded-3 */
+    display: flex; /* Equivalent to d-flex */
+    flex-direction: column; /* Equivalent to flex-column */
+    justify-content: space-between; /* Equivalent to justify-content-between */
+    align-items: center; /* Equivalent to align-items-center */
+    text-align: center;    
+}
+
+  

@@ -1,0 +1,31 @@
+.actived {
+    color: rgb(32, 171, 106); /* Example active style */
+    font-weight: bold;
+  }
+.special:hover{
+  border: 1px solid rgb(32, 171, 106);
+  transition: 700ms;
+  transform: scale(1.02)
+}
+.btnbg{
+  background-color: rgb(236, 238, 241);
+  font-weight: bold;
+  padding: 3px 5px;
+}
+
+/* cart & whishlist notifications */
+
+.notification {
+  background-color: rgb(171, 32, 32);
+  width: 20px;  /* Set fixed width */
+  height: 20px; /* Set fixed height */
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;    /* Adjust for positioning */
+  right: 0px;  /* Adjust for positioning */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Optional: text color if needed */
+  font-size: 12px; /* Optional: font size for text */
+}

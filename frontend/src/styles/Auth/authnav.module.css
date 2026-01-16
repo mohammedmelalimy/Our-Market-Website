@@ -1,0 +1,20 @@
+/* For all screen sizes */
+.CustomContainer {
+    display: flex;             
+    align-items: center;       
+    width: 75%;                
+    justify-content: flex-end; /* Corresponds to 'justify-content-end' */
+    gap: 1rem; 
+    color:rgb(26, 220, 90)           /* Corresponds to 'gap-3', where 1rem is the Bootstrap gap value */
+  }
+
+  @media (max-width: 768px) { /* Adjust breakpoint if needed */
+    .CustomContainer.mobile {
+      margin-top: 1rem;        /* Corresponds to 'mt-3' */
+      margin-left: auto;       /* Corresponds to 'mx-auto' for centering */
+      margin-right: auto;      /* Corresponds to 'mx-auto' for centering */
+      width: 100%;             /* Corresponds to 'w-100' */
+      justify-content: center; /* Corresponds to 'justify-content-center' */
+      gap: 30px;      
+    }
+  }
