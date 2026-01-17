@@ -7,11 +7,7 @@ import styles from "../../../styles/Landing/Home.module.css";
 
 const { popdetected } = styles;
 
-const Popular = () => {
-  // Modal state
-  const [showModal, setShowModal] = useState(false);
-  const handleShowModal = () => setShowModal(true);
-
+const Popular = ({ onOpenModal }) => {
   // Show more/less state
   const [showMore, setShowMore] = useState(6);
 
@@ -45,7 +41,7 @@ const Popular = () => {
                 <Button
                   variant="success"
                   className="w-25 mb-3 text-center p-0"
-                  onClick={handleShowModal}
+                  onClick={onOpenModal}
                 >
                   +Add
                 </Button>

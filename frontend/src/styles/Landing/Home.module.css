@@ -104,7 +104,7 @@
 }
 @media (max-width: 768px) {
     .advertise {
-      width: 100% !important; /* Each child takes full width */
+      width: 90% !important; /* Each child takes full width */
       margin-bottom: 15px; 
     }
   }

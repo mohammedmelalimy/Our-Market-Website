@@ -21,18 +21,15 @@ const Home = () => {
   return (
     <div>
         {/* part 1 */}
-        <Landing/>
+        <Landing onOpenModal={() => setShowModal(true)}/>
         {/* part 2 */}
-        <Advertisements/>
-
+        <Advertisements onOpenModal={() => setShowModal(true)} />
         {/* part 3 */}
-        <Popular/>
+        <Popular onOpenModal={() => setShowModal(true)}/>
         {/* part 4 */}
-        <Specialproducts/>
-
+        <Specialproducts onOpenModal={() => setShowModal(true)}/>
         {/* part 5 */}
         <Offers/>
-        
         <CustomModal show={showModal}
           handleClose={handleCloseModal}
           title="Sign In"
