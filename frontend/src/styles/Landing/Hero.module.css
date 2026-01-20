@@ -1,0 +1,54 @@
+/* Section background */
+.hero-section {
+    background-color: rgba(250, 253, 254, 0.32);
+  }
+  
+  /* Overlay on hero image */
+  .hero-overlay {
+    background: linear-gradient(to top, rgba(255,255,255,0.2), transparent);
+  }
+  
+  /* Floating badge positioning */
+  .hero-badge {
+    transform: translate(-20%, 20%);
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 0.75rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+  }
+  
+  /* Badge icon size */
+  .badge-icon {
+    width: 48px;
+    height: 48px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 991.98px) {
+    .hero-text {
+      margin-top: 40px !important;
+    }
+  
+    .hero-badges {
+      justify-content: center !important;
+    }
+  
+    .hero-badge {
+      transform: translate(0%, 20%);
+      position: relative !important;
+      margin-top: 1rem;
+    }
+  }
+  
+  /* Buttons spacing on mobile */
+  .hero-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  @media (min-width: 576px) {
+    .hero-btn {
+      width: auto;
+    }
+  }
+  

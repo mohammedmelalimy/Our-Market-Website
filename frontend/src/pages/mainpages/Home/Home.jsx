@@ -6,6 +6,7 @@ import Landing from "./Landing";
 import Offers from "./Offers";
 import Popular from "./Popular";
 import Specialproducts from "./Specialproducts";
+import Hero from "./Hero";
 
 // styles 
 
@@ -19,9 +20,9 @@ const Home = () => {
   futureDate.setDate(futureDate.getDate() + 1452);
   
   return (
-    <div>
+    <div style={{backgroundColor:'rgba(205, 221, 208, 0.14)'}}>
         {/* part 1 */}
-        <Landing onOpenModal={() => setShowModal(true)}/>
+        <Hero onOpenModal={() => setShowModal(true)}/>
         {/* part 2 */}
         <Advertisements onOpenModal={() => setShowModal(true)} />
         {/* part 3 */}

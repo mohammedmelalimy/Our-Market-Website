@@ -4,8 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 import GrowExample from "../../../services/Spinner";
 import { fetchProducts } from "../../../store/thunk/getproduct";
 import styles from "../../../styles/Landing/Home.module.css";
-
-const { popdetected } = styles;
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
+const { popdetected , viewtext} = styles;
 
 const Popular = ({ onOpenModal }) => {
   // Show more/less state
@@ -22,7 +23,26 @@ const Popular = ({ onOpenModal }) => {
 
   return (
     <div className="container my-5">
-      <h3 className="mt-5 mb-4">Popular Products</h3>
+      <div className="d-flex justify-content-between align-items-center">
+        <h3 className="mt-5 mb-4 fw-bolder fs-1">Popular Products</h3>
+        {products.length > 0 && (
+          <div className="text-center mt-3">
+            <a
+              className="text-dark fw-bold d-inline-flex align-items-center gap-2"
+              style={{ textDecoration: "none", cursor: "pointer" }}
+              onClick={() =>
+                showMore === 6 ? setShowMore(products.length) : setShowMore(6)
+              }
+            >
+              <span className={viewtext}>
+                {showMore === 6 ? "View all Products" : "View less"}
+              </span>
+              {showMore === 6 ? <KeyboardDoubleArrowDownIcon /> : <KeyboardDoubleArrowUpIcon />}
+            </a>
+          </div>
+        )}
+
+      </div>
 
       <div className="row">
         {products.length > 0 ? (
@@ -53,18 +73,7 @@ const Popular = ({ onOpenModal }) => {
         )}
       </div>
 
-      {products.length > 0 && (
-        <div className="text-center mt-3">
-          <Button
-            variant="dark"
-            onClick={() =>
-              showMore === 6 ? setShowMore(products.length) : setShowMore(6)
-            }
-          >
-            {showMore === 6 ? "Show More" : "Show Less"}
-          </Button>
-        </div>
-      )}
+
     </div>
   );
 };

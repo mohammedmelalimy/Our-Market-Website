@@ -22,7 +22,7 @@ const Specialproducts = ({ onOpenModal }) => {
   return (
         <div className="container mt-5">
 
-          <h5 className="mb-5 fs-3">Daily Best Sells</h5>
+          <h5 className="mb-5 fs-1 fw-bolder">Daily Best Sells</h5>
 
           <div className="gap-3" style={{ display: 'flex', flexWrap: 'wrap' }}>
 

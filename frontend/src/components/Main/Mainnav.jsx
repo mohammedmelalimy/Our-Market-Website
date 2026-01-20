@@ -19,15 +19,15 @@ const Mainnav = () => {
 
     return (
         <div>
-            <Navbar className="bg-light sticky-top" data-bs-theme="light"
-              style={{ boxShadow: '2px 3px 1px rgba(0, 0, 0, 0.1)' }}>
+            <Navbar className="sticky-top" data-bs-theme="light"
+              style={{ boxShadow: '2px 3px 1px rgba(0, 0, 0, 0.1)'  , backgroundColor: '#ffffff00' }}>
                 <Container>
                     <Navbar.Brand as={NavLink} to="/" className='text-dark fw-bold active'>
                         Our <Badge className='bg-success p-2'>Market</Badge>
                     </Navbar.Brand>
                     {!isMobile && (
                         <>
-                            <Nav className='d-flex justify-content-evenly' style={{ width: '28%' }}>
+                            <Nav className='d-flex justify-content-evenly' style={{ width: '28%' , fontWeight: '700' }}>
                                 <Nav.Link as={NavLink} to="/" className={({ isActive }) => (isActive ? "active text-dark" : "text-dark")}>
                                     Home
                                 </Nav.Link>
