@@ -12,7 +12,6 @@ const Advertisements = ({ onOpenModal }) => {
         <p>Get Upto 30% Off</p>
         <Button variant="dark" onClick={onOpenModal}>Shop Now</Button>
       </div>
-
       <div className={`${advertise} ${banner2} mx-auto colorbg rounded-3 p-4`}>
         <h3 className="fw-bold">Freshly Baked Buns</h3>
         <p>Get Upto 25% Off</p>

@@ -20,7 +20,7 @@ const Hero = ({ onOpenModal }) => {
               Discover Your <br/>
               <span className="text-success">
                 <ReactTyped
-                  strings={["Favorite Snacks..."]}
+                  strings={["Favorite Snacks...","Fresh Groceries...","Hot Offers..."]}
                   typeSpeed={280}
                   backSpeed={80}
                   loop
