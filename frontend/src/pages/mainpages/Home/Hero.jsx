@@ -5,7 +5,7 @@ import "../../../styles/Landing/Hero.module.css";
 import { ReactTyped } from "react-typed";
 
 
-const Hero = () => {
+const Hero = ({ onOpenModal }) => {
   return (
     <section className="hero-section position-relative overflow-hidden">
       <div className="container py-4 py-md-7">
@@ -35,6 +35,7 @@ const Hero = () => {
                 variant="success" 
                 size="lg" 
                 className="d-flex justify-content-center align-items-center px-4 py-3 fw-semibold hero-btn"
+                onClick={onOpenModal}
               >
                 <span className="d-flex align-items-center gap-2">
                   Shop Now <ArrowForwardIcon />
@@ -45,7 +46,7 @@ const Hero = () => {
                 size="lg" 
                 className="d-flex justify-content-center align-items-center px-4 py-3 fw-semibold hero-btn"
               >
-                <span className="d-flex align-items-center gap-2">
+                <span className="d-flex align-items-center gap-2" onClick={onOpenModal}>
                   View Categories
                 </span>
               </Button>
