@@ -1,12 +1,11 @@
 import MenuIcon from '@mui/icons-material/Menu';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Badge, Button, Container, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import { useMediaQuery } from 'react-responsive';
 import { NavLink } from 'react-router-dom';
-import Signin from '../../pages/mainpages/Signin'; 
-import CustomModal from './CustomModal'; 
+import Signin from '../../pages/mainpages/Signin';
 import '../../styles/Landing/Nav.module.css';
-
+import CustomModal from './CustomModal';
 const Mainnav = () => {
     const [show, setShow] = useState(false);
     const [showModal, setShowModal] = useState(false);
@@ -18,6 +17,7 @@ const Mainnav = () => {
     const handleCloseModal = () => setShowModal(false);
 
     const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isTablet = useMediaQuery({ maxWidth: 1024 });
 
     // Scroll effect
     useEffect(() => {
@@ -31,16 +31,15 @@ const Mainnav = () => {
     return (
         <div>
             <Navbar
-                className={`sticky-top py-2 fs-5 navbar-transparent ${scrolled ? 'scrolled' : ''}`}
+                className={`fs-5 ${scrolled ? 'scrolled' : ''}`}
                 data-bs-theme="light" style={{borderBottom:'1px solid rgb(187, 187, 187)'}}
             >
                 <Container>
-                    <Navbar.Brand as={NavLink} to="/" className='text-dark active' style={{fontWeight:'800'}}>
-                        Our <Badge className='bg-success fw-bold fs-4'>Market</Badge>
+                    <Navbar.Brand as={NavLink} to="/" className='text-dark active' style={{fontWeight:'800', display:'flex', alignItems:'center'}}>Snack<Badge className='bg-success'>Zone</Badge> 
                     </Navbar.Brand>
                     {!isMobile && (
                         <>
-                            <Nav className='d-flex justify-content-between' style={{ width: '35%', fontWeight: '700' }}>
+                            <Nav className='d-flex justify-content-between' style={{ width: isTablet ? '40%' : '34%', fontWeight: '400' }}>
                                 <Nav.Link as={NavLink} to="/" className={({ isActive }) => (isActive ? "active text-dark" : "text-dark")}>Home</Nav.Link>
                                 <Nav.Link as={NavLink} to="features" className={({ isActive }) => (isActive ? "active text-dark" : "text-dark")}>Features</Nav.Link>
                                 <Nav.Link as={NavLink} to="about-us" className={({ isActive }) => (isActive ? "active text-dark" : "text-dark")}>About</Nav.Link>

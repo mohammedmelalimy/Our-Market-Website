@@ -1,24 +1,27 @@
-
-.navbar-transparent {
-    background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    transition: background-color 0.3s ease;
+.scrolling-banner {
+  width: 100%;
+  background: #ffb703;
+  color: #fff;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative;
+  font-weight: bold;
 }
 
-
-.navbar-transparent.scrolled {
-    background-color: rgba(255, 255, 255, 0.9);
+.scrolling-banner p {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scrollText 12s linear infinite;
+  font-size: 1.2rem;
 }
 
-
-.navbar-transparent .nav-link:hover {
-    color: #28a745; 
-}
-
-
-@media (max-width: 767px) {
-    .offcanvas-body {
-        height: 100%;
-    }
+/* Animation */
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

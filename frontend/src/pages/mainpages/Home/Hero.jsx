@@ -1,8 +1,8 @@
-import { Button } from "react-bootstrap";
-import heroImage from "../../../assets/snaacks.jpg";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import "../../../styles/Landing/Hero.module.css";
+import { Button } from "react-bootstrap";
 import { ReactTyped } from "react-typed";
+import heroImage from "../../../assets/snaacks.jpg";
+import "../../../styles/Landing/Hero.module.css";
 
 
 const Hero = ({ onOpenModal }) => {
@@ -72,7 +72,7 @@ const Hero = ({ onOpenModal }) => {
           </div>
           {/* Hero Image */}
           <div className="col-lg-6 order-1 order-lg-2 position-relative hero-image-wrapper">
-            <div className="rounded-3 overflow-hidden shadow hero-image">
+            <div className="rounded-3 overflow-hidden hero-image">
               <img 
                 src={heroImage} 
                 alt="Assorted premium snacks including chips, biscuits, and chocolate"
@@ -83,7 +83,7 @@ const Hero = ({ onOpenModal }) => {
 
             {/* Floating Badge */}
             <div className="position-absolute bottom-0 start-0 hero-badge">
-              <div className="d-flex align-items-center gap-3 bg-light p-2 rounded-3">
+              <div className="d-flex align-items-center gap-3 p-2 rounded-3" style={{backgroundColor:'rgba(241, 235, 235, 0.82)'}}>
                 <div className="d-flex align-items-center justify-content-center bg-success bg-opacity-10 rounded-3 badge-icon">
                   <span className="fs-3">🎉</span>
                 </div>
