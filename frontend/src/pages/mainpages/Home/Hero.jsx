@@ -2,7 +2,7 @@ import { Button } from "react-bootstrap";
 import heroImage from "../../../assets/snaacks.jpg";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import "../../../styles/Landing/Hero.module.css";
-
+import { ReactTyped } from "react-typed";
 
 
 const Hero = () => {
@@ -17,8 +17,15 @@ const Hero = () => {
               <span>Free shipping on orders $35+</span>
             </div>
             <h1 className="display-4 fw-bold mb-3">
-              Discover Your
-              <span className="d-block text-success">Favorite Snacks</span>
+              Discover Your <br/>
+              <span className="text-success">
+                <ReactTyped
+                  strings={["Favorite Snacks..."]}
+                  typeSpeed={280}
+                  backSpeed={80}
+                  loop
+                />
+              </span>
             </h1>
             <p className="lead text-muted mb-4">
               From crispy chips to sweet treats, explore our curated collection of premium snacks from around the world.
