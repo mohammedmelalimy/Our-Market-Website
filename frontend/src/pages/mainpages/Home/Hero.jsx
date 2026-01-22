@@ -26,8 +26,8 @@ const Hero = ({ onOpenModal }) => {
                 />
               </span>
             </h1>
-            <p className="lead text-muted mb-4">
-              From crispy chips to sweet treats, explore our curated collection of premium snacks from around the world.
+            <p className="lead text-muted mb-1">
+              From crispy chips to sweet treats, explore our collection of premium snacks from around the world.
             </p>
             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-4">
               <Button 
@@ -79,11 +79,11 @@ const Hero = ({ onOpenModal }) => {
                 alt="Assorted premium snacks" 
                 className={`img-fluid ${styles.heroImage}`} 
               />
-              <div className="position-absolute top-0 start-0 w-100 h-100 hero-overlay"></div>
             </div>
 
             {/* Floating Badge */}
-            <div className="position-absolute bottom-0 start-50 translate-middle-x translate-lg-middle-x">
+            <div className={`position-absolute bottom-0 start-50 translate-middle-x translate-lg-middle-x 
+            ${styles.overlay}`}>
               <div className="d-flex align-items-center gap-3 p-2 rounded-3" style={{backgroundColor:'rgba(241, 235, 235, 0.82)'}}>
                 <div className="d-flex align-items-center justify-content-center bg-success bg-opacity-10 rounded-3 badge-icon">
                   <span className="fs-3">🎉</span>

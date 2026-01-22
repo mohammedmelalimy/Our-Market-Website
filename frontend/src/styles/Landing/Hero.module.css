@@ -43,6 +43,15 @@
   55% {
     transform: rotate(15deg) translateX(3px); /* يقف هنا 2 ثانية */
   }
+  65% {
+    transform: rotate(15deg) translateX(3px); /* يقف هنا 2 ثانية */
+  }
+  75% {
+    transform: rotate(15deg) translateX(3px); /* يقف هنا 2 ثانية */
+  }
+  85% {
+    transform: rotate(15deg) translateX(3px); /* يقف هنا 2 ثانية */
+  }
   100% {
     transform: rotate(-15deg) translateX(0); /* يرجع للبداية */
   }
@@ -64,9 +73,13 @@
 /* ===== Responsive: Mobile ===== */
 @media (max-width: 480px) {
   .heroContainer {
-    max-width: 100%;
+    max-width: 70%;
     transform: rotate(-5deg);
     animation: rotateHero 10s ease-in-out infinite;
+    display: none;
+  }
+  .overlay{
+    display: none;
   }
 
   .heroImage {
