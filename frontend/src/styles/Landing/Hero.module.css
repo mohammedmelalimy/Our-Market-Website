@@ -1,54 +1,75 @@
-/* Section background */
-.hero-section {
-    background-color: rgba(250, 253, 254, 0.32);
+/* ===== Hero Background ===== */
+.hero {
+  background: linear-gradient(
+    135deg,
+    rgb(244, 241, 233),
+    rgb(235, 229, 214),
+    rgb(222, 215, 197)
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== Hero Container & Animation ===== */
+.heroContainer {
+  width: 58%;
+  max-width: 600px;
+  margin: 0 auto;
+  transform: rotate(-15deg);
+  animation: rotateHero 20s ease-in-out infinite;
+  animation-delay: 2s;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Hero Image Styling */
+.heroImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-top: 15px;
+  display: block;
+}
+
+/* ===== Hero Rotation Animation ===== */
+@keyframes rotateHero {
+  0% {
+    transform: rotate(-15deg) translateX(0);
   }
-  
-  /* Overlay on hero image */
-  .hero-overlay {
-    background: linear-gradient(to top, rgba(255,255,255,0.2), transparent);
+  45% {
+    transform: rotate(15deg) translateX(3px); /* يصل للزاوية +15deg */
   }
-  
-  /* Floating badge positioning */
-  .hero-badge {
-    transform: translate(-20%, 20%);
-    background-color: white;
-    border-radius: 1rem;
-    padding: 0.5rem 0.75rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+  55% {
+    transform: rotate(15deg) translateX(3px); /* يقف هنا 2 ثانية */
   }
-  
-  /* Badge icon size */
-  .badge-icon {
-    width: 48px;
-    height: 48px;
+  100% {
+    transform: rotate(-15deg) translateX(0); /* يرجع للبداية */
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 991.98px) {
-    .hero-text {
-      margin-top: 40px !important;
-    }
-  
-    .hero-badges {
-      justify-content: center !important;
-    }
-  
-    .hero-badge {
-      transform: translate(0%, 20%);
-      position: relative !important;
-      margin-top: 1rem;
-    }
+}
+
+/* ===== Responsive: Tablet ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+  .heroContainer {
+    max-width: 80%;
+    transform: rotate(-10deg);
+    animation: rotateHero 10s ease-in-out infinite;
   }
-  
-  /* Buttons spacing on mobile */
-  .hero-btn {
-    width: 100%;
-    justify-content: center;
+
+  .heroImage {
+    margin-top: 10px;
   }
-  
-  @media (min-width: 576px) {
-    .hero-btn {
-      width: auto;
-    }
+}
+
+/* ===== Responsive: Mobile ===== */
+@media (max-width: 480px) {
+  .heroContainer {
+    max-width: 100%;
+    transform: rotate(-5deg);
+    animation: rotateHero 10s ease-in-out infinite;
   }
-  
+
+  .heroImage {
+    margin-top: 5px;
+  }
+}

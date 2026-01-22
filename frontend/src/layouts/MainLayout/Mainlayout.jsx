@@ -10,7 +10,7 @@ const Mainlayout = () => {
         speed={60}
         delay={6}
         pauseOnHover={true}
-        className="bg-success text-white fw-bold fs-6 m-0 p-0"
+        className="bg-black text-success fw-bold fs-6 m-0 p-0"
       >
         🔥 Hot Deals on Snacks! 🍟 Fresh • Fast • Delicious • SnackZone Special Offers 🔥 
       </Marquee>
