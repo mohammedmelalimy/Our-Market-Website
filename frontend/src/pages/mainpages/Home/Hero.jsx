@@ -53,7 +53,7 @@ const Hero = ({ onOpenModal }) => {
             </div>
 
             {/* Trust Badges */}
-            <div className="d-flex flex-wrap align-items-center gap-3 justify-content-center justify-content-lg-start">
+            <div className={`${styles.responsive} d-flex flex-wrap align-items-center gap-3 justify-content-center justify-content-lg-start`}>
               <div className="text-center">
                 <p className="h4 fw-bold mb-0">500+</p>
                 <p className="small text-muted mb-0">Products</p>
