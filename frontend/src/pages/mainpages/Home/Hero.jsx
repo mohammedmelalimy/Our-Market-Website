@@ -8,14 +8,14 @@ const Hero = ({ onOpenModal }) => {
   return (
     <section className={`position-relative overflow-hidden ${styles.hero}`}>
       <div className="container py-4 py-md-7">
-        <div className="row align-items-center g-4">
+        <div className="row align-items-center g-5">
           {/* Text Content */}
-          <div className="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
-            <div className="d-inline-flex align-items-center gap-1 px-3 py-1 rounded-pill bg-success bg-opacity-10 text-success fw-medium mb-3">
+          <div className={`col-lg-6 order-2 order-lg-1 text-center text-lg-start ${styles.responsive}`}>
+            <div className={`d-inline-flex align-items-center gap-1 px-3 py-1 rounded-pill bg-success bg-opacity-10 text-success fw-medium mb-3 ${styles.responsive}`}>
               <span>✨</span>
               <span>Free shipping on orders $35+</span>
             </div>
-            <h1 className="display-4 fw-bold mb-3">
+            <h1 className={`${styles.responsive} display-4 fw-bold mb-3`}>
               Discover Your <br/>
               <span className="text-success">
                 <ReactTyped
@@ -26,14 +26,14 @@ const Hero = ({ onOpenModal }) => {
                 />
               </span>
             </h1>
-            <p className="lead text-muted mb-1">
+            <p className={`lead text-muted mb-1 ${styles.responsive}`}>
               From crispy chips to sweet treats, explore our collection of premium snacks from around the world.
             </p>
             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-4">
               <Button 
                 variant="success" 
                 size="lg" 
-                className="d-flex justify-content-center align-items-center px-4 py-3 fw-semibold"
+                className={`d-flex justify-content-center align-items-center px-4 py-3 fw-semibold ${styles.responsive}`}
                 onClick={onOpenModal}
               >
                 <span className="d-flex align-items-center gap-2">

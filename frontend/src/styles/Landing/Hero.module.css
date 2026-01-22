@@ -81,7 +81,10 @@
   .overlay{
     display: none;
   }
-
+  .responsive{
+    margin-top: 20px;
+    
+  }
   .heroImage {
     margin-top: 5px;
   }
