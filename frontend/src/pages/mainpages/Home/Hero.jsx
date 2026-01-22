@@ -8,14 +8,14 @@ const Hero = ({ onOpenModal }) => {
   return (
     <section className={`position-relative overflow-hidden ${styles.hero}`}>
       <div className="container py-4 py-md-7">
-        <div className="row align-items-center g-5">
+        <div className="row align-items-center">
           {/* Text Content */}
-          <div className={`col-lg-6 order-2 order-lg-1 text-center text-lg-start ${styles.responsive}`}>
-            <div className={`d-inline-flex align-items-center gap-1 px-3 py-1 rounded-pill bg-success bg-opacity-10 text-success fw-medium mb-3 ${styles.responsive}`}>
+          <div className={`col-lg-6 order-2  order-lg-1 text-center text-lg-start`}>
+            <div className={`d-inline-flex align-items-center gap-1 px-3 py-1 rounded-pill bg-success bg-opacity-10 text-success fw-medium my-3`}>
               <span>✨</span>
               <span>Free shipping on orders $35+</span>
             </div>
-            <h1 className={`${styles.responsive} display-4 fw-bold mb-3`}>
+            <h1 className={` display-4 fw-bold my-2`}>
               Discover Your <br/>
               <span className="text-success">
                 <ReactTyped
@@ -26,14 +26,14 @@ const Hero = ({ onOpenModal }) => {
                 />
               </span>
             </h1>
-            <p className={`lead text-muted mb-1 ${styles.responsive}`}>
+            <p className={`lead text-muted my-5`}>
               From crispy chips to sweet treats, explore our collection of premium snacks from around the world.
             </p>
-            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-4">
+            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start my-5">
               <Button 
                 variant="success" 
                 size="lg" 
-                className={`d-flex justify-content-center align-items-center px-4 py-3 fw-semibold ${styles.responsive}`}
+                className={`d-flex justify-content-center align-items-center px-4 py-3 fw-semibold`}
                 onClick={onOpenModal}
               >
                 <span className="d-flex align-items-center gap-2">
@@ -53,7 +53,7 @@ const Hero = ({ onOpenModal }) => {
             </div>
 
             {/* Trust Badges */}
-            <div className={`${styles.responsive} d-flex flex-wrap align-items-center gap-3 justify-content-center justify-content-lg-start`}>
+            <div className={`d-flex  my-5 flex-wrap align-items-center gap-5 justify-content-center justify-content-lg-start`}>
               <div className="text-center">
                 <p className="h4 fw-bold mb-0">500+</p>
                 <p className="small text-muted mb-0">Products</p>
@@ -82,9 +82,8 @@ const Hero = ({ onOpenModal }) => {
             </div>
 
             {/* Floating Badge */}
-            <div className={`position-absolute bottom-0 start-50 translate-middle-x translate-lg-middle-x 
-            ${styles.overlay}`}>
-              <div className="d-flex align-items-center gap-3 p-2 rounded-3" style={{backgroundColor:'rgba(241, 235, 235, 0.82)'}}>
+            <div className={`position-absolute bottom-0 start-0 translate-middle-x translate-lg-middle-x ${styles.overlay}`}>
+              <div className="d-flex align-items-center gap-3 p-2 rounded-3" style={{backgroundColor:'rgba(241, 235, 235, 0.53)'}}>
                 <div className="d-flex align-items-center justify-content-center bg-success bg-opacity-10 rounded-3 badge-icon">
                   <span className="fs-3">🎉</span>
                 </div>

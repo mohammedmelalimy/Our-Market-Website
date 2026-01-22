@@ -31,6 +31,11 @@
   margin-top: 15px;
   display: block;
 }
+.overlay {
+  animation: floatingBadge 3s ease-in-out infinite;
+}
+
+
 
 /* ===== Hero Rotation Animation ===== */
 @keyframes rotateHero {
@@ -56,6 +61,22 @@
     transform: rotate(-15deg) translateX(0); /* يرجع للبداية */
   }
 }
+
+
+@keyframes floatingBadge {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* يتحرك يمين */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
 
 /* ===== Responsive: Tablet ===== */
 @media (min-width: 481px) and (max-width: 768px) {
