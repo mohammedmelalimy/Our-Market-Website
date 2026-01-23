@@ -1,11 +1,10 @@
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 import { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import GrowExample from "../../../services/Spinner";
 import { fetchProducts } from "../../../store/thunk/getproduct";
 import styles from "../../../styles/Landing/Home.module.css";
-import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
-import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 const { popdetected , viewtext} = styles;
 
 const Popular = ({ onOpenModal }) => {
@@ -69,7 +68,9 @@ const Popular = ({ onOpenModal }) => {
             </div>
           ))
         ) : (
-          <GrowExample />
+          <div className="spinner-border text-success mx-auto" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
         )}
       </div>
 
