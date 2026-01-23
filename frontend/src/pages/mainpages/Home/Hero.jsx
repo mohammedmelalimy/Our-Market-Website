@@ -11,11 +11,11 @@ const Hero = ({ onOpenModal }) => {
         <div className="row align-items-center">
           {/* Text Content */}
           <div className={`col-lg-6 order-2  order-lg-1 text-center text-lg-start`}>
-            <div className={`d-inline-flex align-items-center gap-1 px-3 py-1 rounded-pill bg-success bg-opacity-10 text-success fw-medium my-3`}>
+            <div className={`d-inline-flex align-items-center gap-1 px-3 py-1 rounded-pill bg-success bg-opacity-10 text-success fw-medium mt-5`}>
               <span>✨</span>
               <span>Free shipping on orders $35+</span>
             </div>
-            <h1 className={` display-4 fw-bold my-2`}>
+            <h1 className={` display-4 fw-bold mt-5`}>
               Discover Your <br/>
               <span className="text-success">
                 <ReactTyped
@@ -29,6 +29,23 @@ const Hero = ({ onOpenModal }) => {
             <p className={`lead text-muted my-5`}>
               From crispy chips to sweet treats, explore our collection of premium snacks from around the world.
             </p>
+            {/* Trust Badges */}
+            <div className={`d-flex  my-5 flex-wrap align-items-center gap-5 justify-content-center justify-content-lg-start`}>
+              <div className="text-center">
+                <p className="h4 fw-bold mb-0">500+</p>
+                <p className="small text-muted mb-0">Products</p>
+              </div>
+              <div className="vr d-none d-md-block"></div>
+              <div className="text-center">
+                <p className="h4 fw-bold mb-0">50k+</p>
+                <p className="small text-muted mb-0">Happy Customers</p>
+              </div>
+              <div className="vr d-none d-md-block"></div>
+              <div className="text-center">
+                <p className="h4 fw-bold mb-0">4.9★</p>
+                <p className="small text-muted mb-0">Rating</p>
+              </div>
+            </div>
             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start my-5">
               <Button 
                 variant="success" 
@@ -50,24 +67,6 @@ const Hero = ({ onOpenModal }) => {
                   View Categories
                 </span>
               </Button>
-            </div>
-
-            {/* Trust Badges */}
-            <div className={`d-flex  my-5 flex-wrap align-items-center gap-5 justify-content-center justify-content-lg-start`}>
-              <div className="text-center">
-                <p className="h4 fw-bold mb-0">500+</p>
-                <p className="small text-muted mb-0">Products</p>
-              </div>
-              <div className="vr d-none d-md-block"></div>
-              <div className="text-center">
-                <p className="h4 fw-bold mb-0">50k+</p>
-                <p className="small text-muted mb-0">Happy Customers</p>
-              </div>
-              <div className="vr d-none d-md-block"></div>
-              <div className="text-center">
-                <p className="h4 fw-bold mb-0">4.9★</p>
-                <p className="small text-muted mb-0">Rating</p>
-              </div>
             </div>
           </div>
 
