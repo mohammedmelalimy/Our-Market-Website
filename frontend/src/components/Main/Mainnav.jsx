@@ -77,7 +77,7 @@ const Mainnav = () => {
                                         Sign in
                                     </Button>
                                     <Button variant='success'>
-                                        <Nav.Link to="signup" onClick={handleClose} className='fw-bold text-white'>Sign up</Nav.Link>
+                                        <Nav.Link as={NavLink} to="signup" onClick={handleClose} className='fw-bold text-white'>Sign up</Nav.Link>
                                     </Button>
                                 </div>
                             </Nav>

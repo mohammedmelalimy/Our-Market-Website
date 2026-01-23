@@ -30,7 +30,7 @@ const Hero = ({ onOpenModal }) => {
               From crispy chips to sweet treats, explore our collection of premium snacks from around the world.
             </p>
             {/* Trust Badges */}
-            <div className={`d-flex  my-5 flex-wrap align-items-center gap-5 justify-content-center justify-content-lg-start`}>
+            <div className={`d-flex  my-3 flex-wrap align-items-center gap-5 justify-content-center justify-content-lg-start`}>
               <div className="text-center">
                 <p className="h4 fw-bold mb-0">500+</p>
                 <p className="small text-muted mb-0">Products</p>
@@ -46,7 +46,7 @@ const Hero = ({ onOpenModal }) => {
                 <p className="small text-muted mb-0">Rating</p>
               </div>
             </div>
-            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start my-5">
+            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start my-2">
               <Button 
                 variant="success" 
                 size="lg" 
