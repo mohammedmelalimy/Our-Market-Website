@@ -7,7 +7,7 @@ import styles from "../../../styles/Landing/Hero.module.css";
 const Hero = ({ onOpenModal }) => {
   return (
     <section className={`position-relative overflow-hidden ${styles.hero}`}>
-      <div className="container py-4 py-md-7">
+      <div className="container py-lg-5 py-sm-4">
         <div className="row align-items-center">
           {/* Text Content */}
           <div className={`col-lg-6 order-2  order-lg-1 text-center text-lg-start`}>
