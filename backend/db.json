@@ -1,5 +1,13 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "mohammed.m.elalimy@gmail.com",
+      "password": "$2a$10$RbEHQ4TO5yUuVWYxymSx1.gLo5o3BIgI.YuDTv7JIXhj1dbgVXVn.",
+      "firstName": "Mohammed",
+      "lastName": "Elalimy",
+      "id": 1
+    }
+  ],
   "products": [
     {
       "id": 1,
